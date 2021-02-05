@@ -1,1 +1,341 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Gentium Book Basic', serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* font-family: 'Gentium Book Basic', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Padauk', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Spectral', serif; */
+
+/* All Pages */
+
+/* Header */
+
+body {
+    background-color: #fff8e9;
+    font-family: 'Spectral', serif;
+
+}
+
+header {
+    margin-top: 2rem;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-size:5rem;
+    margin: 1rem 2rem 2rem;
+    text-align:right;
+    transition: .3s;
+}
+
+h1 a:hover {
+    color: #184d47;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover{
+    font-family: 'Share Tech Mono', monospace;
+    color: #fff8e9;
+    font-variant: small-caps;
+}
+
+nav {
+    display:flex;
+    justify-content: flex-end;
+    margin:0;
+}
+
+nav a {
+    background-color:#184d47;
+    border:0;
+    width: 12%;
+    padding: .5rem 0;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px #96bb7c;
+    text-align:center;
+    font-size: 2.25rem;
+    font-family: 'Share Tech Mono', monospace;
+    transition: .3s;
+    color:#96bb7c;
+}
+
+/* Footer */
+footer {
+    background-color: #d6efc7;
+    justify-content: center;
+    box-sizing:border-box;
+    margin: 4rem 0 0;
+    padding: 1rem 0;
+}
+
+footer img {
+    width:50px;
+    padding: 0 10%;
+}
+
+.icons {
+    display:flex;
+    justify-content: center;   
+}
+
+footer p{
+    text-align:center;
+    display:block;
+    margin: .5rem;
+}
+
+/* Other */
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    text-align:center;
+    padding-top: 1.5rem;
+}
+
+/* Index/Home */
+
+.intro p {
+    font-size:1.5rem;
+    margin: 2% 10%;
+    text-align: justify;
+}
+
+.spooky {
+    /* object-fit: cover;
+    width: 100%;
+    align-items: center; */
+    object-fit:cover;
+    object-position: 0% 0%;
+    /* height:360px; */
+    height:40rem;
+    width:100%;
+}
+
+.spooky-image {
+    width: 100%;
+    object-fit:cover;
+    object-position: 0%;
+    height:40rem;
+}
+
+/* About */
+
+.about {
+    margin: auto;
+    width: 70%;
+    border: 5px solid #184d47;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.aboutme {
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+
+.aboutme img {
+    width: 20%;
+    margin-top:1rem;    
+}
+
+ul {
+    margin: 1rem 0 0 2rem;
+}
+
+li {
+    margin: 1rem 0 0;
+}
+
+/* Contact */
+
+.information {
+    margin: auto;
+    width: 70%;
+    display:flex;
+    justify-content: center;
+}
+
+/* Projects */
+
+.projects {
+    margin: auto;
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects img {
+    height: 60vh;
+    margin: 2rem;
+}
+
+.projects img:hover {
+    border: 6px solid #184d47;
+}
+
+/* Media Queries */
+@media(max-width:800px) {
+    h1 {
+        font-size:3rem;
+        text-align:center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+    
+    nav a {
+        width: 18%;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin: 2rem 0 0;
+        padding: 1rem 0;
+    }
+    
+    footer img {
+        width:30px;
+        padding:0 10%;
+    }
+    
+    .about {
+        margin-top: 2%;
+    }
+    
+    .aboutme img {
+        width: 50%;
+        margin-top:1rem;
+        align-items: center;
+    }
+    
+    .projects {
+        padding-top: 3%;
+    }
+    
+    .projects img {
+        height: auto;
+        width: 99%;
+        margin: 1rem;
+        border: 4px solid #184d47;
+        margin: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size:2.5rem;
+    }
+
+    nav {
+        justify-content: center;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    nav a {
+        width: 35%;
+        font-size: 1rem;
+        margin: 1%;
+    }
+
+    .intro p{
+        font-size:1.25rem;
+    }
+
+    .spooky {
+        height: 40vh;
+    }
+
+    .spooky-image {
+        height: inherit;
+    }
+    
+    h2 {
+        font-size:3rem;
+    }
+
+    .aboutme {
+        font-size: 1rem;
+    }
+
+    .aboutme img {
+        width: 100%;
+    }
+
+    li {
+        margin-left: -1rem;
+    }
+
+    footer {
+        margin: 1rem 0 0;
+        padding: .5rem 0;
+    }
+    
+    footer img {
+        width:25px;
+        padding:0 30%;
+    }
+
+    .projects img {
+        margin: .5rem 0; 
+    }
+}
