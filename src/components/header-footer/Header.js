@@ -48,10 +48,20 @@ const Links = styled.div`
     margin: 5rem 0 0;
     font-size: 1.25rem;
 `
-const Nav = styled.nav``
-const Link = styled.h2``
+const Nav = styled.nav`
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+`
+const Link = styled.a`
+    font-weight: bold;
+    font-size: 2rem;
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+`
 const Icons = styled.div`
-    margin: 5rem 0 0;
+    margin: 5rem 0 2rem;
 `
 const Icon = styled.img`
     width: 40px;
@@ -82,10 +92,10 @@ const Header = () => {
 
                 <Nav>
                 
-                    <Link>About</Link>
-                    <Link>Portfolio</Link>
-                    <Link>Resume</Link>
-                    <Link>Contact</Link>   
+                    <Link href="#about">About</Link>
+                    <Link href="#portfolio">Portfolio</Link>
+                    <Link href="#resume">Resume</Link>
+                    <Link href="#contact">Contact</Link>   
                 
                 </Nav>
             </Links>
