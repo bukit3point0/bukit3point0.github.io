@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {useHistory} from 'react-router-dom'
+import Scroll from 'react-scroll'
+
 
 import gitcat from '../images/gitcat.svg'
 import linkedin from '../images/linkedin.png'
@@ -46,6 +48,7 @@ const Links = styled.div`
     margin: 5rem 0 0;
     font-size: 1.25rem;
 `
+const Nav = styled.nav``
 const Link = styled.h2``
 const Icons = styled.div`
     margin: 5rem 0 0;
@@ -61,23 +64,7 @@ const Foot = styled.div`
 
 const Header = () => {
 
-    const history = useHistory()
-
-    const aboutLink = () => {
-        history.push('/')
-    }
-
-    const portfolioLink = () => {
-        history.push('/portfolio')
-    }
-
-    const resumeLink = () => {
-        history.push('/resume')
-    }
-
-    const contactLink = () => {
-        history.push('./contact')
-    }
+    const ScrollLink = Scroll.ScrollLink
 
     return (
         <Page>
@@ -92,11 +79,15 @@ const Header = () => {
                     <Icon src={gitcat}/>
                     <Icon src={linkedin}/>
                 </Icons>
-            
-                <Link onClick={aboutLink}>About</Link>
-                <Link onClick={portfolioLink}>Portfolio</Link>
-                <Link onClick={resumeLink}>Resume</Link>
-                <Link onClick={contactLink}>Contact</Link>   
+
+                <Nav>
+                
+                    <Link>About</Link>
+                    <Link>Portfolio</Link>
+                    <Link>Resume</Link>
+                    <Link>Contact</Link>   
+                
+                </Nav>
             </Links>
 
             <Foot>

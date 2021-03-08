@@ -92,7 +92,7 @@ const Portfolio = () => {
     const closeMarketplace = () => setOpenMarket(false)
 
     return (
-        <Page>
+        <Page id="portfolio">
 
             <PageTitle>Portfolio</PageTitle>
 

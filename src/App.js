@@ -13,25 +13,8 @@ function App() {
   return (
     <div>
       <Header/>
-      <Switch>
-
-        <Route exact path='/'>
-          <About/>
-        </Route>
-        
-        <Route path='/portfolio'>
-          <Portfolio/>
-        </Route>
-
-        <Route path='/resume'>
-          <Resume/>
-        </Route>
-
-        <Route path='/contact'>
-          <Contact/>
-        </Route>
-
-      </Switch>
+      
+      <About/>
   
     </div>
   );

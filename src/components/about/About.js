@@ -52,7 +52,7 @@ const Para2 = styled(Para)`
 
 const About = () => {
     return (
-        <Page>
+        <Page id="about">
             <AboutMe>
                          
                 <ParaCont>

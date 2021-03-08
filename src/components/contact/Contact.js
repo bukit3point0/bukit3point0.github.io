@@ -54,7 +54,7 @@ const Submit = styled.button`
 
 const Contact = () => {
     return (
-        <Page>
+        <Page id="contact">
             <PageTitle>Contact Me</PageTitle>
 
             <Container>

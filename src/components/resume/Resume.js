@@ -40,7 +40,7 @@ const Download = styled.a`
 
 const Resume = () => {
     return (
-        <Page>
+        <Page id="resume">
             <PageTitle>Resume</PageTitle>
             <ResumeDiv>
                 <ResumePDF src={resume}/>
