@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/static/js/main.3ea37c68.chunk.js",
+    "main.js.map": "/static/js/main.3ea37c68.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b6395155.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b6395155.js.map",
+    "static/css/2.1fe20c78.chunk.css": "/static/css/2.1fe20c78.chunk.css",
+    "static/js/2.d17bd99a.chunk.js": "/static/js/2.d17bd99a.chunk.js",
+    "static/js/2.d17bd99a.chunk.js.map": "/static/js/2.d17bd99a.chunk.js.map",
+    "static/js/3.6425c8d4.chunk.js": "/static/js/3.6425c8d4.chunk.js",
+    "static/js/3.6425c8d4.chunk.js.map": "/static/js/3.6425c8d4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.1fe20c78.chunk.css.map": "/static/css/2.1fe20c78.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.d17bd99a.chunk.js.LICENSE.txt": "/static/js/2.d17bd99a.chunk.js.LICENSE.txt",
+    "static/media/Connie Reynolds resume.def89021.jpg": "/static/media/Connie Reynolds resume.def89021.jpg",
+    "static/media/Connie Reynolds resume.fc8ebbfa.pdf": "/static/media/Connie Reynolds resume.fc8ebbfa.pdf",
+    "static/media/africanmarketplace.ba2212da.png": "/static/media/africanmarketplace.ba2212da.png",
+    "static/media/gitcat.7c5f8c05.svg": "/static/media/gitcat.7c5f8c05.svg",
+    "static/media/linkedin.01addfe5.png": "/static/media/linkedin.01addfe5.png",
+    "static/media/marnisite.3000ac52.png": "/static/media/marnisite.3000ac52.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6395155.js",
+    "static/css/2.1fe20c78.chunk.css",
+    "static/js/2.d17bd99a.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.3ea37c68.chunk.js"
+  ]
+}
