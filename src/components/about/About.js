@@ -27,12 +27,6 @@ const AboutMe = styled.div`
     }
 `
 
-const Hello = styled.h1`
-    font-size: 5rem;
-    margin: 0 4%;
-    text-align: center;
-    font-family: 'ff-ernestine-pro', serif;
-`
 const ParaCont = styled.div`
     display:flex;
     width: 80%;
@@ -41,6 +35,16 @@ const ParaCont = styled.div`
     height: 40%;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (max-width: 1800px) {
+        padding-top: 20vh;
+    }
+`
+const Hello = styled.h1`
+    font-size: 5rem;
+    margin: 0 4%;
+    text-align: center;
+    font-family: 'ff-ernestine-pro', serif;
 `
 const Para = styled.p`
     padding: 0 5%;

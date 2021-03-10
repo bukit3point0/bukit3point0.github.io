@@ -31,6 +31,10 @@ const Page = styled.div`
         margin: 0;
         display: flex;
         justify-content: space-between;
+
+    }
+    @media screen and (max-width: 1650px) {
+        align-items: center;
     }
 `
 const Box = styled.div`
@@ -46,6 +50,11 @@ const Name = styled.h1`
     font-size: 4rem;
     margin: 1rem 0 .25rem;
     padding: 0;
+
+    @media screen and (max-width: 1650px) {
+        font-size: 3rem;
+        margin: 0 0 .25rem;
+    }
 `
 const Title = styled.h3`
     font-family: 'ff-ernestine-pro', serif;
