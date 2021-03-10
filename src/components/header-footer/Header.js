@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {useHistory} from 'react-router-dom'
-import Scroll from 'react-scroll'
-
 
 import gitcat from '../images/gitcat.svg'
 import linkedin from '../images/linkedin.png'
@@ -27,10 +24,23 @@ const Page = styled.div`
     position: fixed;
     margin-left: 80%;
     color: #382933;
+
+    @media screen and (max-width: 1800px) {
+        width: 100%;
+        height: 20vh;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
 `
 const Box = styled.div`
     text-align: right;
     padding: 0 10% 0 0;
+
+    @media screen and (max-width: 1800px) {
+        text-align: left;
+        padding: 0 0 0 3%;
+    }
 `
 const Name = styled.h1`
     font-size: 4rem;
@@ -47,11 +57,24 @@ const Links = styled.div`
     text-align: center;
     margin: 5rem 0 0;
     font-size: 1.25rem;
+
+    @media screen and (max-width: 1800px) {
+        margin: 0 3rem;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
 `
 const Nav = styled.nav`
     display:flex;
     flex-direction: column;
     justify-content: center;
+
+    @media screen and (max-width: 1800px) {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-start;
+    }
 `
 const Link = styled.a`
     font-weight: bold;
@@ -59,22 +82,36 @@ const Link = styled.a`
     color: inherit;
     text-decoration: none;
     padding: 1rem;
+
+    @media screen and (max-width: 1800px) {
+        padding: 0 2rem;
+    }
 `
 const Icons = styled.div`
     margin: 5rem 0 2rem;
+
+    @media screen and (max-width: 1800px) {
+        margin: 0;
+    }
 `
 const Icon = styled.img`
     width: 40px;
     padding: 0 .5rem;
+
+    @media screen and (max-width: 1800px) {
+        padding: 0 2rem;
+    }
 `
 const Foot = styled.div`
     position: absolute;
     bottom: 0;
+
+    @media screen and (max-width: 1800px) {
+        visibility: hidden;
+    }
 `
 
 const Header = () => {
-
-    const ScrollLink = Scroll.ScrollLink
 
     return (
         <Page>

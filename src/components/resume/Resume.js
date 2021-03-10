@@ -11,6 +11,11 @@ const Page = styled.div`
     font-family: 'edita-small', serif;
     height: 100vh;
     font-size: 2.5rem;
+
+    @media screen and (max-width: 1800px) {
+        width: 100vw;
+        height: 80vh;
+    }
 `
 const PageTitle = styled.h1`
     font-size: 4rem;
@@ -24,10 +29,13 @@ const ResumeDiv = styled.div`
 const ResumePDF = styled.img`
    margin: auto;
    height: 80vh;
+
+   @media screen and (max-width: 1800px) {
+       height: 60vh;
+   }
 `
 const Download = styled.a`
     position: absolute;
-    /* margin: 35% auto 0; */
     margin: auto;
     top: 250%;
     background-color:#3b5249;
@@ -36,6 +44,10 @@ const Download = styled.a`
     text-decoration: none;
     font-size: 1.2rem;
     padding:1em 1.5em;
+
+    @media screen and (max-width: 1800px) {
+        top: 220%;
+    }
 `
 
 const Resume = () => {

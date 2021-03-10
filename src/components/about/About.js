@@ -9,7 +9,6 @@ const Page = styled.div`
     background-color: #a4b494;
     color: #382933;
     color: #3b5249;
-    /* width: 80vw; */
 `
 
 const AboutMe = styled.div`
@@ -21,6 +20,11 @@ const AboutMe = styled.div`
     align-content: center;
     align-items: center;
     width: 80vw;
+
+    @media screen and (max-width: 1800px) {
+        height: 100vh;
+        width: 100vw;
+    }
 `
 
 const Hello = styled.h1`

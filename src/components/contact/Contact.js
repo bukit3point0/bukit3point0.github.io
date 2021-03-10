@@ -1,12 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Footer from '../header-footer/Footer'
+
 const Page = styled.div`
     background-color: #3b5249;
     height: 100vh;
     color: #a4b494;
     font-family: 'edita-small', serif;
     width: 80vw;
+
+    @media screen and (max-width: 1800px) {
+        height: 80vh;
+        width: 100%;
+    }
 `
 const PageTitle = styled.h1`
     font-size: 4rem;
@@ -17,6 +24,11 @@ const PageTitle = styled.h1`
 const Container = styled.div`
     width: 50%;
     margin: 5rem auto;
+
+    @media screen and (max-width: 1800px) {
+        margin: 1rem auto 5rem;
+        width: 45%;
+    }
 `
 const LetsTalk = styled.p`
     font-family: 'ff-ernestine-pro', serif;
@@ -50,6 +62,21 @@ const Submit = styled.button`
     border-radius: 10px;
     color: #a4b494;
     float: right;
+
+    @media screen and (max-width: 1800px) {
+        margin: 1rem 0;
+    }
+`
+
+const Foot = styled.footer`
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+
+    @media screen and (max-width: 1800px) {
+        visibility: visible;
+    }
 `
 
 const Contact = () => {
@@ -82,6 +109,10 @@ const Contact = () => {
                     <Submit type="submit">Submit Form</Submit>
                 </Form>
             </Container>
+
+            <Foot>
+                <Footer/>
+            </Foot>
         </Page>
     )
 }

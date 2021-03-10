@@ -13,10 +13,10 @@ const Copyright = styled.p`
     text-align:center;
     display:block;
     margin: 0;
-    padding: .35rem 0;
+    padding: .15rem 0;
     font-size: .8rem;
 `
-const FreePik = styled.a`
+const Link = styled.a`
     color: #382933;
     text-decoration: none;
 `
@@ -26,7 +26,8 @@ const Footer = () => {
         <Page>
 
             <Copyright>© Connie Reynolds 2021</Copyright>
-            <Copyright><FreePik href='https://www.freepik.com/vectors/mockup'>Mockup vector created by brgfx - www.freepik.com</FreePik></Copyright>
+            <Copyright><Link href="https://github.com/bukit3point0/bukit3point0.github.io" target="_blank">Want to see the code for this website? Click here</Link></Copyright>
+            <Copyright><Link href='https://www.freepik.com/vectors/mockup'>Mockup vector created by brgfx - www.freepik.com</Link></Copyright>
 
         </Page>
     )

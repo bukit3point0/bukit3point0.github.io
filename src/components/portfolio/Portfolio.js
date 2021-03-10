@@ -11,6 +11,11 @@ const Page = styled.div`
     height: 100vh;
     font-family: 'edita-small', serif;
     width: 80%;
+
+    @media screen and (max-width: 1800px) {
+        height: 80vh;
+        width: 100%;
+    }
 `
 const PageTitle = styled.h1`
     color: #a4b494;
@@ -31,6 +36,10 @@ const PortfolioObj = styled.div`
     align-items: center;
     cursor: pointer;
     color: #a4b494;
+
+    @media screen and (max-width: 1800px) {
+        width: 30%;
+    }
 `
 const PortfolioImg = styled.img`
     width: 80%;
