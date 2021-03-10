@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.5bb8d2d2.chunk.js",
-    "main.js.map": "/static/js/main.5bb8d2d2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ba52e7a5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ba52e7a5.js.map",
+    "main.js": "/static/js/main.31470135.chunk.js",
+    "main.js.map": "/static/js/main.31470135.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b131fb78.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b131fb78.js.map",
     "static/css/2.1fe20c78.chunk.css": "/static/css/2.1fe20c78.chunk.css",
-    "static/js/2.f4c9cc84.chunk.js": "/static/js/2.f4c9cc84.chunk.js",
-    "static/js/2.f4c9cc84.chunk.js.map": "/static/js/2.f4c9cc84.chunk.js.map",
-    "static/js/3.f8f129ef.chunk.js": "/static/js/3.f8f129ef.chunk.js",
-    "static/js/3.f8f129ef.chunk.js.map": "/static/js/3.f8f129ef.chunk.js.map",
+    "static/js/2.63022d90.chunk.js": "/static/js/2.63022d90.chunk.js",
+    "static/js/2.63022d90.chunk.js.map": "/static/js/2.63022d90.chunk.js.map",
+    "static/js/3.8dd03a8d.chunk.js": "/static/js/3.8dd03a8d.chunk.js",
+    "static/js/3.8dd03a8d.chunk.js.map": "/static/js/3.8dd03a8d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1fe20c78.chunk.css.map": "/static/css/2.1fe20c78.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.f4c9cc84.chunk.js.LICENSE.txt": "/static/js/2.f4c9cc84.chunk.js.LICENSE.txt",
+    "static/js/2.63022d90.chunk.js.LICENSE.txt": "/static/js/2.63022d90.chunk.js.LICENSE.txt",
     "static/media/Connie Reynolds resume.def89021.jpg": "/static/media/Connie Reynolds resume.def89021.jpg",
     "static/media/Connie Reynolds resume.fc8ebbfa.pdf": "/static/media/Connie Reynolds resume.fc8ebbfa.pdf",
     "static/media/africanmarketplace.ba2212da.png": "/static/media/africanmarketplace.ba2212da.png",
@@ -22,10 +22,10 @@
     "static/media/marnisite.3000ac52.png": "/static/media/marnisite.3000ac52.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba52e7a5.js",
+    "static/js/runtime-main.b131fb78.js",
     "static/css/2.1fe20c78.chunk.css",
-    "static/js/2.f4c9cc84.chunk.js",
+    "static/js/2.63022d90.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.5bb8d2d2.chunk.js"
+    "static/js/main.31470135.chunk.js"
   ]
 }
