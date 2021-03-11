@@ -8,6 +8,11 @@ const Page = styled.div`
     margin: 0;
     padding: 2rem 2rem 1rem;
     color: #382933;
+
+    @media screen and (max-width: 1800px) {
+        box-sizing: content-box;
+        margin-top: 20vh;
+    }
 `
 const Copyright = styled.p`
     text-align:center;
@@ -15,6 +20,10 @@ const Copyright = styled.p`
     margin: 0;
     padding: .15rem 0;
     font-size: .8rem;
+
+    @media screen and (max-width: 1800px) {
+        margin: 0;
+    }
 `
 const Link = styled.a`
     color: #382933;

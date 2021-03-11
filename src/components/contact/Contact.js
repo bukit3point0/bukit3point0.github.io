@@ -12,7 +12,7 @@ const Page = styled.div`
 
     @media screen and (max-width: 1800px) {
         height: 80vh;
-        width: 100%;
+        width: 100vw;
     }
 `
 const PageTitle = styled.h1`
@@ -32,6 +32,10 @@ const PageTitle = styled.h1`
 const Container = styled.div`
     width: 50%;
     margin: 5rem auto;
+
+    @media screen and (max-height: 975px) {
+        height: 58%;
+    }
 
     @media screen and (max-width: 1800px) {
         margin: 1rem auto 5rem;
@@ -55,6 +59,10 @@ const FormGroup = styled.div``
 const FormRow = styled.div``
 const Col = styled.div`
     margin: 2rem 0;
+
+    @media screen and (max-height: 975px) {
+        margin: 1rem 0;
+    }
 `
 const FormControl = styled.input`
     width: 90%;
@@ -99,9 +107,10 @@ const Submit = styled.button`
 
 const Foot = styled.footer`
     visibility: hidden;
+    /* margin: 60vh 0 0; */
     margin: 0;
     padding: 0;
-    bottom: 0;
+    
 
     @media screen and (max-width: 1800px) {
         visibility: visible;
