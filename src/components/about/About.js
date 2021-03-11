@@ -45,17 +45,54 @@ const Hello = styled.h1`
     margin: 0 4%;
     text-align: center;
     font-family: 'ff-ernestine-pro', serif;
+
+    @media screen and (max-width: 910px) {
+        font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: 765px) {
+        font-size: 4rem;
+    }
+
+    @media screen and (max-width: 680px) {
+        font-size: 3.5rem;
+    }
+
+    @media screen and (max-width: 595px) {
+        font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 4rem;
+    }
+
+    @media screen and (max-width: 340px) {
+        font-size: 3.5rem;
+    }
 `
 const Para = styled.p`
     padding: 0 5%;
     text-align: justify;
     font-size: 2rem;
     font-family: 'eskorte-latin', serif;
+
+    @media screen and (max-width: 765px) {
+        font-size: 1.75rem;
+    }
 `
 const Para2 = styled(Para)`
     width: 70%;
     font-size: 1.5rem;
     margin: 0;
+
+    @media screen and (max-width: 765px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 340px) {
+        font-size: 1rem;
+        width: 80%;
+    }
 `
 
 const About = () => {

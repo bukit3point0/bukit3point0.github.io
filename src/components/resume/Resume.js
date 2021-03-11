@@ -21,6 +21,14 @@ const PageTitle = styled.h1`
     font-size: 4rem;
     padding: 2rem 0 0 2rem;
     margin: 0;
+
+    @media screen and (max-width: 1172px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 910px) {
+        font-size: 2.75rem;
+    }
 `
 const ResumeDiv = styled.div`
     display:flex;

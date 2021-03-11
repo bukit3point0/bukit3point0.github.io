@@ -5,7 +5,7 @@ const Page = styled.div`
     background-color: #519872;
     justify-content: center;
     box-sizing:border-box;
-    margin: 1rem 0 0;
+    margin: 0;
     padding: 2rem 2rem 1rem;
     color: #382933;
 `

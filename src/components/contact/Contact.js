@@ -19,6 +19,14 @@ const PageTitle = styled.h1`
     font-size: 4rem;
     padding: 2rem 0 0 2rem;
     margin: 0;
+
+    @media screen and (max-width: 1172px) {
+        font-size: 3rem;
+    }
+    
+    @media screen and (max-width: 910px) {
+        font-size: 2.75rem;
+    }
 `
 
 const Container = styled.div`
@@ -29,10 +37,18 @@ const Container = styled.div`
         margin: 1rem auto 5rem;
         width: 45%;
     }
+
+    @media screen and (max-width: 1172px) {
+        margin: 1rem auto;
+    }
 `
 const LetsTalk = styled.p`
     font-family: 'ff-ernestine-pro', serif;
     font-size: 1.25rem;
+
+    @media screen and (max-width: 1172px) {
+        font-size: 1rem;
+    }
 `
 const Form = styled.form``
 const FormGroup = styled.div``
@@ -44,6 +60,10 @@ const FormControl = styled.input`
     width: 90%;
     font-size: 1.25rem;
     font-family: 'ff-ernestine-pro', serif;
+
+    @media screen and (max-width: 1172px) {
+        font-size: 1rem;
+    }
 `
 const Hidden = styled.input`
     display: none;
@@ -52,6 +72,10 @@ const TextArea = styled.textarea`
     width: 90%;
     font-size: 1.25rem;
     font-family: 'ff-ernestine-pro', serif;
+
+    @media screen and (max-width: 1172px) {
+        font-size: 1rem;
+    }
 `
 const Submit = styled.button`
     margin: 2rem 0;
@@ -65,6 +89,11 @@ const Submit = styled.button`
 
     @media screen and (max-width: 1800px) {
         margin: 1rem 0;
+    }
+
+    @media screen and (max-width: 1172px) {
+        margin: 1rem auto 5rem;
+        float: none;
     }
 `
 

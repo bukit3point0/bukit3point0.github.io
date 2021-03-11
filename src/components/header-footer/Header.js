@@ -33,8 +33,14 @@ const Page = styled.div`
         justify-content: space-between;
 
     }
+    
     @media screen and (max-width: 1650px) {
         align-items: center;
+    }
+
+    @media screen and (max-width: 815px) {
+        flex-direction: column;
+        justify-content: center;
     }
 `
 const Box = styled.div`
@@ -44,6 +50,10 @@ const Box = styled.div`
     @media screen and (max-width: 1800px) {
         text-align: left;
         padding: 0 0 0 3%;
+    }
+
+    @media screen and (max-width: 815px) {
+        padding: 1% 0;
     }
 `
 const Name = styled.h1`
@@ -55,12 +65,57 @@ const Name = styled.h1`
         font-size: 3rem;
         margin: 0 0 .25rem;
     }
+
+    @media screen and (max-width: 1501px) {
+        font-size: 2.75rem;
+    }
+
+    @media screen and (max-width: 1172px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 1041px) {
+        font-size: 2.25rem;   
+    }
+
+    @media screen and (max-width: 910px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 815px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 340px) {
+        font-size: 2rem;   
+    }
 `
 const Title = styled.h3`
     font-family: 'ff-ernestine-pro', serif;
     font-size: 1.42rem;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 910px) {
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 815px) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 340px) {
+        font-size: 1.1rem;   
+    }
 `
 const Links = styled.div`
     text-align: center;
@@ -73,6 +128,16 @@ const Links = styled.div`
         align-items: center;
         align-content: center;
     }
+
+    @media screen and (max-width: 865px) {
+        margin: 0 2rem;
+    }
+
+    @media screen and (max-width: 832px) {
+        margin: 0 1.5rem;
+    }
+
+    
 `
 const Nav = styled.nav`
     display:flex;
@@ -84,6 +149,11 @@ const Nav = styled.nav`
         justify-content: flex-end;
         align-content: flex-start;
     }
+
+    @media screen and (max-width: 521px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 `
 const Link = styled.a`
     font-weight: bold;
@@ -94,6 +164,37 @@ const Link = styled.a`
 
     @media screen and (max-width: 1800px) {
         padding: 0 2rem;
+    }
+
+    @media screen and (max-width: 1501px) {
+        font-size: 1.75rem;
+        padding: 0 1.5rem;
+    }
+
+    @media screen and (max-width: 1337px) {
+        padding: 0 1rem;
+    }
+
+    @media screen and (max-width: 1172px) {
+        font-size: 1.5rem;
+        padding: 0 0.75rem;   
+    }
+
+    @media screen and (max-width: 1041px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 943px) {
+        padding: 0 0.5rem;
+    }
+
+    @media screen and (max-width: 521px) {
+        width: 40%;
+        padding: 0.5% 0;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 1rem;
     }
 `
 const Icons = styled.div`
@@ -109,6 +210,22 @@ const Icon = styled.img`
 
     @media screen and (max-width: 1800px) {
         padding: 0 2rem;
+    }
+
+    @media screen and (max-width: 1466px) {
+        padding: 0 1rem;
+    }
+
+    @media screen and (max-width: 1337px) {
+        padding: 0 .5rem;
+    }
+
+    @media screen and (max-width: 910px) {
+        width: 35px;
+    }
+
+    @media screen and (max-width: 521px) {
+        width: 25px;
     }
 `
 const Foot = styled.div`

@@ -22,12 +22,25 @@ const PageTitle = styled.h1`
     font-size: 4rem;
     padding: 2rem 0 0 2rem;
     margin: 0;
+
+    @media screen and (max-width: 1172px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 910px) {
+        font-size: 2.75rem;
+    }
 `
 const PortfolioDiv = styled.div`
     padding: 4rem 0 0;
     display:flex;
     justify-content: space-around;
     flex-wrap:wrap;
+
+    @media screen and (max-width: 580px) {
+        width: 70%;
+        padding: 2rem auto 0;
+    }
 `
 const PortfolioObj = styled.div`
     width: 40%;
@@ -40,16 +53,34 @@ const PortfolioObj = styled.div`
     @media screen and (max-width: 1800px) {
         width: 30%;
     }
+
+    @media screen and (max-width: 934px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 580px) {
+        width: 100%;
+    }
 `
 const PortfolioImg = styled.img`
     width: 80%;
     padding: 2rem;
     margin: 2rem 0 0;
+
+    @media screen and (max-width: 580px) {
+        width: 50%;
+        margin: 1rem 0 0;
+        padding: 1rem;
+    }
 `
 const PortfolioTitle = styled.h3`
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
+
+    @media screen and (max-width: 425px) {
+        text-align: center;
+    }
 `
 const SampleImage = styled.img`
     width: 100%;
