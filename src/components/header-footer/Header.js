@@ -145,15 +145,16 @@ const Nav = styled.nav`
     justify-content: center;
 
     @media screen and (max-width: 1800px) {
-        flex-direction: row;
+        visibility: hidden;
+        /* flex-direction: row;
         justify-content: flex-end;
-        align-content: flex-start;
+        align-content: flex-start; */
     }
-
+/* 
     @media screen and (max-width: 521px) {
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+    } */
 `
 const Link = styled.a`
     font-weight: bold;

@@ -5,6 +5,7 @@ import {Modal} from 'react-responsive-modal'
 
 import marni from '../images/marnisite.png'
 import marketplace from '../images/africanmarketplace.png'
+import lotr from '../images/LOTRsite.png'
 
 const Page = styled.div`
     background-color: #3b5249;
@@ -43,16 +44,12 @@ const PortfolioDiv = styled.div`
     }
 `
 const PortfolioObj = styled.div`
-    width: 40%;
+    width: 30%;
     display:flex;
     flex-direction:column;
     align-items: center;
     cursor: pointer;
     color: #a4b494;
-
-    @media screen and (max-width: 1800px) {
-        width: 30%;
-    }
 
     @media screen and (max-width: 934px) {
         width: 50%;
@@ -210,6 +207,42 @@ const Portfolio = () => {
                             </GoTo>
                         </LinksBox>
                     </div>
+                </Modal>
+
+                <PortfolioObj onClick={onOpenModal}>
+                    <PortfolioImg src={lotr} alt="LOTR character picker site"/>
+                    <PortfolioTitle>Let's Go To Mordor</PortfolioTitle>
+                </PortfolioObj>
+                <Modal  open={openMarni} onClose={onCloseModal} center>
+                    <div>
+                        <SampleImage src={lotr} alt="LOTR character picker site" />
+                        <Website>Let's Go To Mordor</Website>
+                        <Description>
+                            Choose up to 9 people to bring the One Ring to Mordor. SPA built to demonstrate Redux basics. API from <a href="https://the-one-api.dev/">The One API</a>.
+                        </Description>
+                        <List>
+                            <ItemList>
+                                Storing data in the Redux store using an async action creator, making it easier to access state and functions
+                            </ItemList>
+                            <ItemList>
+                                Search for your favorite characters with the search bar by either name or race, or click any of the color coordinated listings above the list.
+                            </ItemList>
+                        </List>
+                        
+                        <LinksBox>
+                            <GoTo>
+                                <GoToLink href="https://lets-go-to-mordor.vercel.app/" target="_blank">
+                                    Website
+                                </GoToLink>
+                            </GoTo>
+                            <GoTo>
+                                <GoToLink href="https://github.com/bukit3point0/web-module-project-async-redux" target="_blank">
+                                    GitHub Repo
+                                </GoToLink>
+                            </GoTo>
+                        </LinksBox>
+                    </div>
+
                 </Modal>
 
             </PortfolioDiv>
