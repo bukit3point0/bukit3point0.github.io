@@ -53,7 +53,8 @@ const Box = styled.div`
     }
 
     @media screen and (max-width: 815px) {
-        padding: 1% 0;
+        margin-top: 2rem;
+        padding: 0;
     }
 `
 const Name = styled.h1`
@@ -128,16 +129,6 @@ const Links = styled.div`
         align-items: center;
         align-content: center;
     }
-
-    @media screen and (max-width: 865px) {
-        margin: 0 2rem;
-    }
-
-    @media screen and (max-width: 832px) {
-        margin: 0 1.5rem;
-    }
-
-    
 `
 const Nav = styled.nav`
     display:flex;
@@ -146,15 +137,7 @@ const Nav = styled.nav`
 
     @media screen and (max-width: 1800px) {
         visibility: hidden;
-        /* flex-direction: row;
-        justify-content: flex-end;
-        align-content: flex-start; */
     }
-/* 
-    @media screen and (max-width: 521px) {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    } */
 `
 const Link = styled.a`
     font-weight: bold;
@@ -187,6 +170,11 @@ const Link = styled.a`
 
     @media screen and (max-width: 943px) {
         padding: 0 0.5rem;
+    }
+
+    @media screen and (max-width: 815px) {
+        width: 0;
+        padding: 0;
     }
 
     @media screen and (max-width: 521px) {
@@ -223,6 +211,10 @@ const Icon = styled.img`
 
     @media screen and (max-width: 910px) {
         width: 35px;
+    }
+
+    @media screen and (max-width: 815px) {
+        padding: 0 1rem;
     }
 
     @media screen and (max-width: 521px) {

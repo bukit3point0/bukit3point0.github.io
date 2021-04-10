@@ -121,12 +121,16 @@ const Portfolio = () => {
 
     const [openMarni, setOpenMarni] = useState(false)
     const [openMarket, setOpenMarket] = useState(false)
+    const [openLotr, setOpenLotr] = useState(false)
 
     const onOpenModal = () => setOpenMarni(true)
     const onCloseModal = () => setOpenMarni(false)
 
     const openMarketplace = () => setOpenMarket(true)
     const closeMarketplace = () => setOpenMarket(false)
+
+    const openLotrModal = () => setOpenLotr(true)
+    const closeLotrModal = () => setOpenLotr(false)
 
     return (
         <Page id="portfolio">
@@ -209,11 +213,11 @@ const Portfolio = () => {
                     </div>
                 </Modal>
 
-                <PortfolioObj onClick={onOpenModal}>
+                <PortfolioObj onClick={openLotrModal}>
                     <PortfolioImg src={lotr} alt="LOTR character picker site"/>
                     <PortfolioTitle>Let's Go To Mordor</PortfolioTitle>
                 </PortfolioObj>
-                <Modal  open={openMarni} onClose={onCloseModal} center>
+                <Modal  open={openLotr} onClose={closeLotrModal} center>
                     <div>
                         <SampleImage src={lotr} alt="LOTR character picker site" />
                         <Website>Let's Go To Mordor</Website>
