@@ -26,6 +26,10 @@ const PageTitle = styled.h1`
         font-size: 3rem;
     }
 
+    @media screen and (max-width: 934px) {
+        padding: 0 0 0 2rem;
+    }
+
     @media screen and (max-width: 910px) {
         font-size: 2.75rem;
     }
@@ -40,6 +44,10 @@ const ResumePDF = styled.img`
 
    @media screen and (max-width: 1800px) {
        height: 60vh;
+   }
+
+   @media screen and (max-width: 934px) {
+       padding-top: 2rem;
    }
 `
 const Download = styled.a`

@@ -23,6 +23,10 @@ const PageTitle = styled.h1`
     @media screen and (max-width: 1172px) {
         font-size: 3rem;
     }
+
+    @media screen and (max-width: 934px) {
+        padding: 0 0 0 2rem;
+    }
     
     @media screen and (max-width: 910px) {
         font-size: 2.75rem;
@@ -45,6 +49,10 @@ const Container = styled.div`
     @media screen and (max-width: 1172px) {
         margin: 1rem auto;
     }
+
+    @media screen and (max-width: 934px) {
+       padding-top: 2rem;
+   }
 `
 const LetsTalk = styled.p`
     font-family: 'ff-ernestine-pro', serif;

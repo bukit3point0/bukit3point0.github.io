@@ -28,6 +28,10 @@ const PageTitle = styled.h1`
         font-size: 3rem;
     }
 
+    @media screen and (max-width: 934px) {
+        padding: 0 0 0 2rem;
+    }
+
     @media screen and (max-width: 910px) {
         font-size: 2.75rem;
     }
@@ -39,7 +43,7 @@ const PortfolioDiv = styled.div`
     flex-wrap:wrap;
 
     @media screen and (max-width: 580px) {
-        width: 70%;
+        /* width: 70%; */
         padding: 2rem auto 0;
     }
 `
@@ -52,11 +56,11 @@ const PortfolioObj = styled.div`
     color: #a4b494;
 
     @media screen and (max-width: 934px) {
-        width: 50%;
+        width: 35%;
     }
 
     @media screen and (max-width: 580px) {
-        width: 100%;
+        width: auto;
     }
 `
 const PortfolioImg = styled.img`
@@ -65,7 +69,7 @@ const PortfolioImg = styled.img`
     margin: 2rem 0 0;
 
     @media screen and (max-width: 580px) {
-        width: 50%;
+        width: 30%;
         margin: 1rem 0 0;
         padding: 1rem;
     }
