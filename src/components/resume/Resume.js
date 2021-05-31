@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import resume from './Connie Reynolds resume.jpg'
-import downloadResume from './Connie Reynolds resume.pdf'
+import resume from './resume_5_21.png'
+import downloadResume from './resume_5_21.pdf'
 
 const Page = styled.div`
     background-color: #a4b494;

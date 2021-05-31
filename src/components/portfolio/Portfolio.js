@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import 'react-responsive-modal/styles.css'
 import {Modal} from 'react-responsive-modal'
 
-import marni from '../images/marnisite.png'
+import robert from '../images/robert-gainey.png'
+import watermyplants from '../images/watermyplants.png'
 import marketplace from '../images/africanmarketplace.png'
-import lotr from '../images/LOTRsite.png'
 
 const Page = styled.div`
     background-color: #3b5249;
@@ -123,18 +123,18 @@ const GoToLink = styled.a`
 
 const Portfolio = () => {
 
-    const [openMarni, setOpenMarni] = useState(false)
+    const [openRobert, setOpenRobert] = useState(false)
+    const [openWater, setOpenWater] = useState(false)
     const [openMarket, setOpenMarket] = useState(false)
-    const [openLotr, setOpenLotr] = useState(false)
 
-    const onOpenModal = () => setOpenMarni(true)
-    const onCloseModal = () => setOpenMarni(false)
+    const openRobertModal = () => setOpenRobert(true)
+    const closeRobertModal = () => setOpenRobert(false)
+
+    const openWaterModal = () => setOpenWater(true)
+    const closeWaterModal = () => setOpenWater(false)
 
     const openMarketplace = () => setOpenMarket(true)
     const closeMarketplace = () => setOpenMarket(false)
-
-    const openLotrModal = () => setOpenLotr(true)
-    const closeLotrModal = () => setOpenLotr(false)
 
     return (
         <Page id="portfolio">
@@ -143,34 +143,71 @@ const Portfolio = () => {
 
             <PortfolioDiv>
             
-                <PortfolioObj onClick={onOpenModal}>
-                    <PortfolioImg src={marni} alt="www.marnijoelen.com"/>
-                    <PortfolioTitle>Marni Joelen</PortfolioTitle>
+                <PortfolioObj onClick={openRobertModal}>
+                    <PortfolioImg src={robert} alt="www.robertgainey.com"/>
+                    <PortfolioTitle>Robert Gainey, Author</PortfolioTitle>
                 </PortfolioObj>
-                <Modal  open={openMarni} onClose={onCloseModal} center>
+                <Modal  open={openRobert} onClose={closeRobertModal} center>
                     <div>
-                        <SampleImage src={marni} alt="www.marnijoelen.com" />
-                        <Website>Marni Joelen</Website>
+                        <SampleImage src={robert} alt="www.robertgainey.com" />
+                        <Website>Robert Gainey, Author</Website>
                         <Description>
-                            Marni Joelen is a horror writer. The website needed to display not only published works but also notices for upcoming conventions.
+                        A static site created to allow the author to announce new publications, sell current works, and have fans connect with/contact the author on social media
                         </Description>
                         <List>
                             <ItemList>
-                                Implemented device and resolution independent navigation quickly with ReactStrap
+                                Built with React; formsubmit.co used to create a simple submission form
                             </ItemList>
                             <ItemList>
-                                Focused on component-based design for code reusability
+                                Communicated with the author to ensure a fully-functional website to specifications
+                            </ItemList>
+                            <ItemList>
+                                Designed the site to be easily updated for future releases
                             </ItemList>
                         </List>
                         
                         <LinksBox>
                             <GoTo>
-                                <GoToLink href="http://marnijoelen.com" target="_blank">
+                                <GoToLink href="https://www.robertgainey.com/" target="_blank" rel="noreferrer">
+                                    Website
+                                </GoToLink>
+                            </GoTo>
+                        </LinksBox>
+                    </div>
+
+                </Modal>
+
+                <PortfolioObj onClick={openWaterModal}>
+                    <PortfolioImg src={watermyplants} alt="Water My Plants"/>
+                    <PortfolioTitle>Water My Plants</PortfolioTitle>
+                </PortfolioObj>
+                <Modal  open={openWater} onClose={closeWaterModal} center>
+                    <div>
+                        <SampleImage src={watermyplants} alt="Water My Plants" />
+                        <Website>Let's Go To Mordor</Website>
+                        <Description>
+                            An application for plant lovers to keep track of their plants and their watering schedule.
+                        </Description>
+                        <List>
+                            <ItemList>
+                                Built with React, Node, and Heroku
+                            </ItemList>
+                            <ItemList>
+                                Coordinated with a team of three frontend developers to ensure useful endpoints and create a complete site
+                            </ItemList>
+                            <ItemList>
+                                Designed and implemented endpoints as the backend developer
+                            </ItemList>
+                        </List>
+                        
+                        <LinksBox>
+                            <GoTo>
+                                <GoToLink href="https://github.com/FT-Water-My-Plants-3" target="_blank">
                                     Website
                                 </GoToLink>
                             </GoTo>
                             <GoTo>
-                                <GoToLink href="https://github.com/marnijoelen/marnijoelen.github.io" target="_blank">
+                                <GoToLink href="https://github.com/bukit3point0/web-module-project-async-redux" target="_blank">
                                     GitHub Repo
                                 </GoToLink>
                             </GoTo>
@@ -180,12 +217,12 @@ const Portfolio = () => {
                 </Modal>
 
                 <PortfolioObj onClick={openMarketplace}>
-                    <PortfolioImg src={marketplace} alt="https://stupefied-aryabhata-1d1a9f.netlify.app/"/>
+                    <PortfolioImg src={marketplace} alt="African Marketplace"/>
                     <PortfolioTitle>African Marketplace</PortfolioTitle>
                 </PortfolioObj>
                 <Modal  open={openMarket} onClose={closeMarketplace} center>
                 <div>
-                        <SampleImage src={marketplace} alt="African Marketplace - Lambda Project" />
+                        <SampleImage src={marketplace} alt="African Marketplace" />
                         <Website>African Marketplace</Website>
                         <Description>
                             Lambda School build week project 3/1-3/5/2021
@@ -215,42 +252,6 @@ const Portfolio = () => {
                             </GoTo>
                         </LinksBox>
                     </div>
-                </Modal>
-
-                <PortfolioObj onClick={openLotrModal}>
-                    <PortfolioImg src={lotr} alt="LOTR character picker site"/>
-                    <PortfolioTitle>Let's Go To Mordor</PortfolioTitle>
-                </PortfolioObj>
-                <Modal  open={openLotr} onClose={closeLotrModal} center>
-                    <div>
-                        <SampleImage src={lotr} alt="LOTR character picker site" />
-                        <Website>Let's Go To Mordor</Website>
-                        <Description>
-                            Choose up to 9 people to bring the One Ring to Mordor. SPA built to demonstrate Redux basics. API from <a href="https://the-one-api.dev/">The One API</a>.
-                        </Description>
-                        <List>
-                            <ItemList>
-                                Storing data in the Redux store using an async action creator, making it easier to access state and functions
-                            </ItemList>
-                            <ItemList>
-                                Search for your favorite characters with the search bar by either name or race, or click any of the color coordinated listings above the list.
-                            </ItemList>
-                        </List>
-                        
-                        <LinksBox>
-                            <GoTo>
-                                <GoToLink href="https://lets-go-to-mordor.vercel.app/" target="_blank">
-                                    Website
-                                </GoToLink>
-                            </GoTo>
-                            <GoTo>
-                                <GoToLink href="https://github.com/bukit3point0/web-module-project-async-redux" target="_blank">
-                                    GitHub Repo
-                                </GoToLink>
-                            </GoTo>
-                        </LinksBox>
-                    </div>
-
                 </Modal>
 
             </PortfolioDiv>
