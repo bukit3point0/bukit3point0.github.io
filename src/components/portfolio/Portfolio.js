@@ -117,7 +117,7 @@ const GoTo = styled.button`
     font-weight: bold;
     font-size: 1.2rem;
 `
-const GoToLink = styled.a`
+const GoToLink = styled.a` 
     color: black;
 `
 
