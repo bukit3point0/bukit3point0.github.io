@@ -144,24 +144,24 @@ const Link = styled.a`
     font-size: 2rem;
     color: inherit;
     text-decoration: none;
-    padding: 1rem;
+    margin: 1rem;
 
     @media screen and (max-width: 1800px) {
-        padding: 0 2rem;
+        margin: 0 2rem;
     }
 
     @media screen and (max-width: 1501px) {
         font-size: 1.75rem;
-        padding: 0 1.5rem;
+        margin: 0 1.5rem;
     }
 
     @media screen and (max-width: 1337px) {
-        padding: 0 1rem;
+        margin: 0 1rem;
     }
 
     @media screen and (max-width: 1172px) {
         font-size: 1.5rem;
-        padding: 0 0.75rem;   
+        margin: 0 0.75rem;   
     }
 
     @media screen and (max-width: 1041px) {
@@ -169,17 +169,17 @@ const Link = styled.a`
     }
 
     @media screen and (max-width: 943px) {
-        padding: 0 0.5rem;
+        margin: 0 0.5rem;
     }
 
     @media screen and (max-width: 815px) {
         width: 0;
-        padding: 0;
+        margin: 0;
     }
 
     @media screen and (max-width: 521px) {
         width: 40%;
-        padding: 0.5% 0;
+        margin: 0.5% 0;
     }
 
     @media screen and (max-width: 410px) {
@@ -195,7 +195,7 @@ const Icons = styled.div`
 `
 const Icon = styled.img`
     width: 40px;
-    padding: 0 .5rem;
+    margin: 0 .5rem;
 
     @media screen and (max-width: 1800px) {
         padding: 0 2rem;
@@ -242,8 +242,12 @@ const Header = () => {
 
             <Links>
                 <Icons>
-                    <Icon src={gitcat}/>
-                    <Icon src={linkedin}/>
+                    <a href="https://github.com/bukit3point0">
+                        <Icon src={gitcat}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/conniereynolds/">
+                        <Icon src={linkedin}/>
+                    </a>
                 </Icons>
 
                 <Nav>

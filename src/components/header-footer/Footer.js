@@ -29,15 +29,21 @@ const Link = styled.a`
     color: #382933;
     text-decoration: none;
 `
+const Underline = styled(Link)`
+    text-decoration: underline;
+`
 
 const Footer = () => {
     return (
         <Page>
 
             <Copyright>© Connie Reynolds 2021</Copyright>
-            <Copyright><Link href="https://github.com/bukit3point0/bukit3point0.github.io" target="_blank">Want to see the code for this website? Click here</Link></Copyright>
-            <Copyright><Link href='https://www.freepik.com/vectors/mockup'>Mockup vector created by brgfx - www.freepik.com</Link></Copyright>
-
+            <Copyright>
+                Want to see the code for this website? <Underline href="https://github.com/bukit3point0/bukit3point0.github.io" target="_blank">Click here</Underline>
+            </Copyright>
+            <Copyright>
+                Mockup vector created by brgfx - <Link href='https://www.freepik.com/vectors/mockup'>www.freepik.com</Link>
+            </Copyright>
         </Page>
     )
 }
