@@ -184,7 +184,7 @@ const Portfolio = () => {
                 <Modal  open={openWater} onClose={closeWaterModal} center>
                     <div>
                         <SampleImage src={watermyplants} alt="Water My Plants" />
-                        <Website>Let's Go To Mordor</Website>
+                        <Website>Water My Plants</Website>
                         <Description>
                             An application for plant lovers to keep track of their plants and their watering schedule.
                         </Description>
